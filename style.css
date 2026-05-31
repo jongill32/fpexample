@@ -337,7 +337,7 @@ FEATURES ↓
 
 
 
-#feature{
+#features{
     position: relative;
 }
 
@@ -1286,12 +1286,14 @@ MOBILE RESPONSIVENESS ↓
         align-items: flex-end;
     }
 
+   
     .steps__grid{
         height: 5rem;
         width: 5rem;
         bottom: -50px;
     }
 
+  
     .plan__bottom {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -1302,6 +1304,8 @@ MOBILE RESPONSIVENESS ↓
         max-width: none;
     }
 
+   
+  
 }
 
 @media (max-width: 1024px) {
@@ -1328,10 +1332,88 @@ MOBILE RESPONSIVENESS ↓
         flex-direction: column;
         align-items: center;
     }
-    #pricing .row {
-        margin-top: 40px;
-    }
+
+
+    .nav__links {
+        display: none;
+      }
+    
+      
+      header .row,
+      #quality .row,
+      #steps .row,
+      #values .row,
+      #testimonials .row {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .header__description,
+      .header__img--wrapper,
+      .quality__description,
+      .quality__img--wrapper,
+      .steps__img--wrapper,
+      .steps__description,
+      .values__description,
+      .values__img,
+      .testimonials__img,
+      .testimonials__description {
+        width: 100%;
+      }
+    
+      .header__description {
+        order: 2;
+      }
+    
+      .header__img--wrapper {
+        order: 1;
+        margin-bottom: 48px;
+      }
+    
+      .features {
+        justify-content: center;
+      }
+    
+      .feature {
+        width: 100%;
+        max-width: 400px;
+      }
+    
+      .values__list {
+        flex-direction: column;
+      }
+    
+      .step {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .step__description {
+        margin-left: 0;
+        margin-top: 16px;
+      }
+      .plans {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .plan {
+        max-width: 450px;
+        width: 100%;
+      }
+    
+    
+    
+      h1 {
+        font-size: 36px;
+      }
+    
+      .section__title {
+        font-size: 36px;
+      }
+
 }
+
 
 @media(max-width: 640px) {
     .container {
@@ -1344,5 +1426,16 @@ MOBILE RESPONSIVENESS ↓
     main {
         margin-bottom: 80px;
     }
-}
 
+    #start .start__row {
+        align-items: center;
+        text-align: center;
+        gap: 32px;
+      }
+      
+      
+    
+      
+
+
+}

@@ -1320,7 +1320,23 @@ MOBILE RESPONSIVENESS ↓
     footer {
         padding: 80px 32px;
     }
+
+    .start__row {
+        flex-direction: column;
+    }
+
+    .start__title {
+        text-align: center;
+        width: 100%;
+        max-width: 512px;
+    }
+
+    .start__buttons {
+        width: auto;
+        margin-top: 24px;
+    }
 }
+
 
 @media(max-width: 768px) {
     #quality .row,
@@ -1428,18 +1444,26 @@ MOBILE RESPONSIVENESS ↓
     main {
         margin-bottom: 80px;
     }
-    .start__buttons {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-      }
     
-      .start__buttons button,
-      .start__buttons a {
-        width: 100%;
-        max-width: 280px;
-      }
-   
+    .start__row{
+        flex-direction: column;
+       
+    }
+
+    .start__title{
+        font-size: 24px;
+    }
+
+    .start__buttons{
+        flex-direction: column;
+    }
+    .start__button:nth-child(1) {
+        margin-right: 0;
+    }
+
+    .start__button:nth-child(2) {
+        margin-top: 16px;
+    }
 
 
 }

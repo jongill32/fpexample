@@ -1286,11 +1286,29 @@ MOBILE RESPONSIVENESS ↓
         align-items: flex-end;
     }
 
+    h1 {
+        font-size: 36px;
+        color: #1a202c;
+        line-height: 1.25;
+    }
+    
+    .header__description--para {
+        font-size: 16px;
+    }
    
+
+    .header__img--wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
     .steps__grid{
         height: 5rem;
         width: 5rem;
         bottom: -50px;
+    }
+
+    .header__img {
+        max-width: 512px;
     }
 
   
@@ -1310,6 +1328,10 @@ MOBILE RESPONSIVENESS ↓
 
 @media (max-width: 1024px) {
 
+    .nav__links {
+        display: none;
+    }
+
     .btn__menu {
         display: block;
     }
@@ -1317,10 +1339,43 @@ MOBILE RESPONSIVENESS ↓
         flex-direction: column;
         align-items: center;
     }
-    footer {
-        padding: 80px 32px;
+
+    .header__description {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 30px;
     }
 
+    .header__description--para {
+        margin: 20px 0;
+    }
+
+    .header__customers--title, .header__img--wrapper {
+        margin-top: 48px;
+    }
+
+    .header__customers {
+        padding-right: 0px;
+    }
+
+    .header__description, .header__img--wrapper {
+        width: 100%;
+        max-width: 512px;
+        margin: 0 auto;
+
+    }
+
+    #features .section__title, #pricing .section__title {
+        font-size: 48px;
+    }
+
+    
+   
+   
     .start__row {
         flex-direction: column;
     }
@@ -1335,7 +1390,66 @@ MOBILE RESPONSIVENESS ↓
         width: auto;
         margin-top: 24px;
     }
+
+    .features {
+        max-width: 768px;
+    }
+
+    .feature__row {
+        padding: 32px 8px;
+        margin: 0 16px;
+    }
+
+    .feature__para {
+        max-width: none;
+    }
+
+    .quality__description {
+        margin-right: 0px;
+        padding-right: 48px;
+    }
+
+    .section__title {
+        font-size: 36px;
+    }
+
+    .values__list {
+        max-width: 20rem;
+        flex-direction: column;
+    }
+
+    .value {
+        margin-top: 2.5rem;
+    }
+
+
+    .footer {
+        padding: 80px 32px;
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        margin-right: 0px;
+    }
+
+    #testimonials .container {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    footer {
+        padding: 80px 32px;
+    }
 }
+
+   
+
+
+   
 
 
 @media(max-width: 768px) {
@@ -1417,6 +1531,20 @@ MOBILE RESPONSIVENESS ↓
         max-width: 450px;
         width: 100%;
       }
+
+      #features .section__para {
+        text-align: center;
+        max-width: 576px;
+    }
+
+    .features {
+        justify-content: center;
+    }
+
+    .feature{
+        width: auto;
+        max-width: 384px;
+    }
     
     
     
@@ -1428,6 +1556,87 @@ MOBILE RESPONSIVENESS ↓
         font-size: 36px;
       }
 
+      #quality .row, #values .row {
+        flex-direction: column-reverse;
+    }
+
+    .quality__description, .quality__img--wrapper, .steps__description, .steps__img--wrapper, .values__description, .values__img, .testimonials__description, .testimonials__img {
+        width: 100%;
+        max-width: 448px;
+    }
+
+    .quality__description, .steps__description, .values__description, .testimonials__description {
+        padding: 0;
+        margin-top: 64px;
+        text-align: center;
+    }
+    .section__para {
+        font-size: 14px;
+    }
+
+    .quality__description, .steps__description, .values__description, .testimonials__description {
+        padding: 0;
+        margin-top: 64px;
+        text-align: center;
+    }
+
+    .values__list {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .value:nth-of-type(1) {
+        margin-right: 0px;
+    }
+
+    .value {
+        margin-right: 0px;
+        align-items: center;
+    }
+    #steps .row, #testimonials .row {
+        flex-direction: column;
+    }
+
+    .testimonials__description {
+        padding-left: 0;
+    }
+
+    .footer__columns {
+        justify-content: flex-start;
+    }
+
+    .footer__column {
+        width: calc(100% / 3);
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__copyright, .footer__socials {
+        margin-top: 32px;
+    }
+
+    .footer__copyright, .footer__socials {
+        margin-top: 32px;
+    }
+
+    .footer__socials {
+        margin-left: 0px;
+    }
+
+    .footer__copyright, .footer__socials {
+        margin-top: 32px;
+    }
+
+    .footer__social--link:first-child {
+        margin-left: 0px;
+    }
+
+
+    
+
 }
 
 
@@ -1436,10 +1645,38 @@ MOBILE RESPONSIVENESS ↓
         padding: 80px 0;
     }
 
+    .header__email {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header__email--input {
+        position: static;
+        padding: 16px 0;
+        padding-left: 32px;
+        line-height: 1.5;
+    }
+
+    .header__email--btn {
+        width: 100%;
+        padding: 16px 0;
+        margin: 16px 0;
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }
+
+    .header__customers--title {
+        font-size: 14px;
+        letter-spacing: 0.05em;
+    }
+
+    
+
     .nav__logo {
         margin: 8px 0;
         padding-bottom: 4px;
     }
+
 
     main {
         margin-bottom: 80px;
@@ -1454,6 +1691,7 @@ MOBILE RESPONSIVENESS ↓
         font-size: 24px;
     }
 
+    
     .start__buttons{
         flex-direction: column;
     }
@@ -1465,5 +1703,28 @@ MOBILE RESPONSIVENESS ↓
         margin-top: 16px;
     }
 
+    #features .section__title, #pricing .section__title {
+        font-size: 36px;
+    }
 
+    .feature__row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature__text {
+        margin-left: 0px;
+        margin-top: 16px;
+    }
+
+    .feature__title {
+        letter-spacing: 0.025em;
+        line-height: 1;
+    }
+
+    .feature__para {
+        margin-top: 4px;
+        line-height: 2;
+    }
 }
